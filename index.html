@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <script src="https://kit.fontawesome.com/2e44d7c71b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="bg-slate-800">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <!-- elemen sebelah kiri -->
+                <div class="px-4">
+                    <a href="index.html" class="font-bold text-green-400 absolute top-3">Online Library</a>
+                </div>
+
+                <!-- elemen sebelah kanan -->
+                <div class="flex items-center px-4">
+                    <div class="block absolute right-4 top-3 lg:hidden ">
+                        <a href="auth/login/index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADjElEQVRoge3ay4tcRRQG8N84PRmjUZMZZ4wv0KWowwQjKIgigkSNOEYQEtxqsoohC1352KqgoMw/Imhwo5j4GkeNUaPOGBUSIupGUNS8pF2cutxmMG3fe6t7Gs0Hl4buOl99p09V3VOninMYLoxk5LoIt+I23IyNmExPC7/jJ3yHL/EO9uOXjBpqo4U57MMZtCs+Z/AGHsH4gLWDMezF8Q5RJ/EunsMDmMXVuCC134DrhONP4y2c6LA/njjPH5QTd+Fwh4DD2I31NbjW41F81MF3BPdkUXoWjGG+o8OvsSUj/xYc7OCf14foTOPt1MEfeAJrcneCUTye+mhjEZflIr8K3yfio7gpF3EXzGAp9fkNrm1KOKmcD+/J+O/02PcHSmdq9722g+ggLsmhriIu7NCwqOaceUm5imzMJq06JpXDbL6q8R34S7wbZvPqqoUZ5QLQ80o5LtKINp7qj65a2KOcLz0NsZ3J4FORggwLWkJTWzjVFaPC4zYe6q+uWrhXaPvBv0Tl4dTwK5yXUcB+kYZMN+QZwcdC445uDefwJ7Y17HAlPkydf665M8XQ39dUVB1MCydyOLNBrKanrc67zRQ+Uw7dyxtwFXnf/Rl01UKuyDybOJ7PpKsWckTmwWT/akZdtdA0Mtcr90SrjiaRuTTZ/fxPPx5QvXiQ81ms4Mh4sjlRfJHzpfe/xcqhVWWrMKXL0Bok/hOTvUkkCmyzYvkd9ByZxpu4EV+IDdyPNXhm0ueqRCRHJAoUKcrWDLoqIWfSOKFMGi8+W6M5sTbnTuMX5UvjdyWu17s16tfG6n35NlafCI3buzUcxbLh3epuFdqO6eEY4rHU+JDhKz4cEtp292IwLopybXGOMSzYKzQtqXAodLso0J3Cpv7oqoRZUUto4+6qxi8mw28125Y2xZSyRPVyHYK1ogJfzJc6J1JNsQ4LScOCBueMEyKVaIuq+CCL2VNKJ5Y1X7pdKYZXsextbkrYA2aVw2kZ1+QinhKnsG0x6Z7Un6O3llidiom9IEMkVmIMryi3pku4T55LByOJq3hPFBO7r2fvdyoTwCKd2SPmU1VMiNypSDuKoVR5ia2Llni7Hu0QcErkVC+IpHOT8sLAGnHydEP67RmRip/ssD+WOFflBsSoKFu+JtLqqpWT08l2u4YO5LxUsw63iEs1m3GFqD8Vl2p+E8WCI2Jnd0BE5deMGs5haPA3GCw59MLcbbwAAAAASUVORK5CYII=" class="w-[30px]"></a>
+                    </div>
+
+                    <div class="absolute hidden lg:block right-4 top-3">
+                        <a href="auth/login/index.html"><button class="font-bold text-sm bg-green-500 text-white px-4 rounded-md"> LOGIN </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- search button -->
+    <section id="home" class="pt-16 h-screen">
+        <div class="home bg-[url('img/covid.jpg')] bg-cover bg-center max-w min-h-full flex items-center justify-center bg-slate-800">
+            <div class="container flex flex-col">
+                <h3 class="text-white text-xl lg:text-2xl mb-5">Accelerating research discovery to shape a better future</h3>
+
+                <h2 class="text-white mb-5 text-3xl lg:text-5xl font-bold">Today's research, tomorrow's innovation</h2>
+
+                <form action="" class="flex items-center justify-center ml-[-36px] lg:ml-0">
+                    <input type="text" placeholder="Search Here.." class="text-dark p-3 rounded-md border-black border focus:outline-none focus:ring-white focus:ring-1 focus:border-white lg:w-3/5">
+                    <button class="border p-3 ml-2 rounded-md border-white hover:bg-white hover:text-black hover:border-black transition-all ease-in-out duration-300  text-white">search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
