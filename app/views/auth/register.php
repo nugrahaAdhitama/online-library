@@ -9,13 +9,13 @@
                 
                 <div class="w-full px-4">
                     
-                    <form action="">
+                    <form action="<?= BASEURL ?>/auth/register" method="POST">
                         <h2 class="font-bold text-2xl lg:text-4xl mb-4 mt-4">Login information</h2>
 
                         <div class="grid gap-6 mb-6 md:grid-cols-2 border-b-2 border-black">
                             <div>
                                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email or Customer ID*</label>
-                                <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ex.user@institution.com" required>
+                                <input type="text" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ex.user@institution.com" required>
                             </div>
                             <div>
                                 <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Retype email*</label>
@@ -23,7 +23,7 @@
                             </div>
                             <div>
                                 <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Password*</label>
-                                <input type="text" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type your password" required>
+                                <input type="text" name="password" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type your password" required>
                             </div>  
                             <div class="mb-8">
                                 <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Confirm password*</label>
@@ -35,20 +35,16 @@
 
                         <div class="grid gap-6 mb-6 md:grid-cols-2 border-b-2 border-black">
                             <div>
-                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First Name*</label>
-                                <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Full Name</label>
+                                <input type="text" name="nama" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type your full name" required>
                             </div>
                             <div>
-                                <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last Name*</label>
-                                <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                                <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Phone Number</label>
+                                <input type="text" name="telepon" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type your phone number" required>
                             </div>
                             <div>
-                                <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Country/Location*</label>
-                                <input type="text" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
-                            </div>  
-                            <div class="mb-8">
-                                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Area of interest*</label>
-                                <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                                <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Address</label>
+                                <input type="text" name="alamat" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type your address" required>
                             </div>
                         </div>
 
