@@ -12,15 +12,23 @@ class Auth_model {
     public function register($data) 
     {
         $hashPassword = password_hash($data['password'], PASSWORD_DEFAULT);
+        $role = 1;
+        $random = rand(1, 999999);
+        $nomor_anggota = $random;
 
         $query = "INSERT INTO users
                     VALUES
-                    ('', :email, :password)
+                    ('', :role_id, :nama, :nomor_anggota, :email, :password, :alamat, :telepon)
         ";
 
         $this->db->query($query);
+        $this->db->bind('role_id', $role);
+        $this->db->bind('nama', $data['nama']);
+        $this->db->bind('nomor_anggota', $nomor_anggota);
         $this->db->bind('email', $data['email']);
         $this->db->bind('password', $hashPassword);
+        $this->db->bind('alamat', $data['alamat']);
+        $this->db->bind('telepon', $data['telepon']);
 
         $this->db->execute();
 

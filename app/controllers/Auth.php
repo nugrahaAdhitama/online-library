@@ -11,4 +11,13 @@ class Auth extends Controller {
         $data['title'] = "Register";
         $this->view('auth/register', true, $data);
     }
+
+    public function tambah()
+    {
+        if( $this->model('Auth_model')->register($_POST) > 0) {
+            echo "Sukses";
+        } else {
+            echo "Gagal";
+        }
+    }
 }

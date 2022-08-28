@@ -9,25 +9,25 @@
                 
                 <div class="w-full px-4">
                     
-                    <form action="<?= BASEURL ?>/auth/register" method="POST">
+                    <form action="<?= BASEURL ?>/auth/tambah" method="POST">
                         <h2 class="font-bold text-2xl lg:text-4xl mb-4 mt-4">Login information</h2>
 
                         <div class="grid gap-6 mb-6 md:grid-cols-2 border-b-2 border-black">
                             <div>
                                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email or Customer ID*</label>
-                                <input type="text" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ex.user@institution.com" required>
+                                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ex.user@institution.com" required>
                             </div>
                             <div>
                                 <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Retype email*</label>
-                                <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="user@institution.com" required>
+                                <input type="email" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="user@institution.com" required>
                             </div>
                             <div>
                                 <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Password*</label>
-                                <input type="text" name="password" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type your password" required>
+                                <input type="password" name="password" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type your password" required>
                             </div>  
                             <div class="mb-8">
                                 <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Confirm password*</label>
-                                <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Re-type your password" required>
+                                <input type="password" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Re-type your password" required>
                             </div>
                         </div>
 
