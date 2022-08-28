@@ -15,9 +15,13 @@ class Auth extends Controller {
     public function tambah()
     {
         if( $this->model('Auth_model')->register($_POST) > 0) {
-            echo "Sukses";
+            Flash::setFlash('success', 'register', 'success');
+            header('Location: ' .BASEURL. '/auth/register');
+            exit;
         } else {
-            echo "Gagal";
+            Flash::setFlash('fail', 'register', 'danger');
+            header('Location: ' .BASEURL. '/auth/register');
+            exit;
         }
     }
 }

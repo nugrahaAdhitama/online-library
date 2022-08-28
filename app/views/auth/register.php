@@ -5,8 +5,9 @@
                 <div class="w-full px-4 border-b-2 border-black">
                     <h2 class="font-bold text-2xl lg:text-4xl mb-4 ">Register</h2>
                     <p class="font-base text-lg mb-4 mt-4">Set and manage content and citation alerts, affiliate with your institution to access your institution's licensed content, save searches and articles, and manage personal subscriptions.</p>
+                    <?php Flash::flash() ?>
                 </div>
-                
+
                 <div class="w-full px-4">
                     
                     <form action="<?= BASEURL ?>/auth/tambah" method="POST">
