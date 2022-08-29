@@ -1,4 +1,3 @@
-
     <!-- search button -->
     <section id="home" class="pt-16 h-screen">
         <div class="home bg-[url('img/covid.jpg')] bg-cover bg-center max-w min-h-full flex items-center justify-center bg-slate-800">

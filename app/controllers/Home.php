@@ -5,6 +5,6 @@ class Home extends Controller {
     {
         $data['title'] = "Online Library";
         $this->model('Auth_model')->login($_POST);
-        $this->view('home/index', true, $data);
+        $this->view('home/index',true, $data);
     }
 }
