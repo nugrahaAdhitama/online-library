@@ -37,7 +37,6 @@ class Auth_model {
 
     public function login($data) 
     {
-        session_start();
 
         if ( isset($data['login-button']) ) {
             $query = "SELECT * FROM " . $this->table . " WHERE email =:email";
